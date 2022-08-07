@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+
+:root {
+	--main-bg-color: black;
+	--page-sides-padding: 10%;
+	--main-font-family: system-ui, sans-serif;
+	--titles-font-family: "Cinzel", serif;
+}
+
+body {
+	min-height: 100vh;
+	margin: unset;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	font-family: var(--main-font-family);
+}
+
+header {
+	background-color: var(--main-bg-color);
+	padding: 2rem var(--page-sides-padding);
+}
+
+header.home {
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0.5),
+			rgba(0, 0, 0, 0.5)
+		),
+		url("main-bg.jpg");
+	background-size: cover;
+	background-position: 0 35%;
+}
+
+nav {
+	display: flex;
+	gap: 1rem;
+	justify-content: flex-end;
+}
+
+nav a {
+	color: white;
+	text-decoration: unset;
+}
+
+nav a:hover {
+	text-decoration: underline;
+}
+
+h1 {
+	color: white;
+	font-size: 4em;
+	font-family: var(--titles-font-family);
+	margin: 3rem 0 2rem 0;
+}
+
+main {
+	background-color: white;
+	padding: 2rem var(--page-sides-padding) 3rem var(--page-sides-padding);
+}
+
+h2 {
+	font-size: 3em;
+	margin: unset;
+	font-family: var(--titles-font-family);
+}
+
+main p {
+	text-align: justify;
+	font-size: 1.25rem;
+	margin: unset;
+	margin-top: 1.5rem;
+}
+
+footer {
+	background-color: var(--main-bg-color);
+	padding: 1rem var(--page-sides-padding);
+}
+
+footer p {
+	color: white;
+	text-align: center;
+}
