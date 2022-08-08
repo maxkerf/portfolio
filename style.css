@@ -47,10 +47,13 @@ nav a:hover {
 }
 
 h1 {
-	color: white;
 	font-size: 4em;
 	font-family: var(--titles-font-family);
 	margin: 3rem 0 2rem 0;
+}
+
+h1.home {
+	color: white;
 }
 
 main {
